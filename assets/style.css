@@ -1,8 +1,26 @@
-* {
-    color: blue;
+:root {
+      --oceangreen: #DEF2F1;
+    }
+
+
+nav {
+    background-color: var(--oceangreen);
+    padding-left: 30px;
+    padding-right: 15px;
 }
 
-h1 {
-    color: black;
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex; 
+    padding: 5px;  
+}
+
+.nav-items {
+    padding-left: 9px;
 }
