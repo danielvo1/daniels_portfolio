@@ -58,6 +58,11 @@ nav {
         padding: 10px;
     }
 
+    .navbar h1 {
+        font-size: 35px;
+        padding: 10px;
+    }
+
     .nav-container {
         display: block;
     }
