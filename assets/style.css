@@ -1,26 +1,68 @@
 :root {
       --oceangreen: #DEF2F1;
+      --black: #17252A;
+      --white: #FEFFFF;
+      --aqua: #3aafa9;
+      --darkaqua: #2b7a78;
     }
-
 
 nav {
     background-color: var(--oceangreen);
-    padding-left: 30px;
-    padding-right: 15px;
 }
 
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
+    padding: 20px;       
+}
+
+.navbar h1{
+    font-size: 25px;
+    padding-left: 10px;
 }
 
 .nav-container {
     display: flex; 
     padding: 5px;  
+    list-style: none;
 }
 
 .nav-items {
-    padding-left: 9px;
+    padding-left: 10px;
+}
+.nav-items a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--black);
+    text-align: center;
+    font-size: 20px;
+}
+
+.nav-items a:hover {
+    color: var(--oceangreen);
+    background: var(--darkaqua);
+}
+
+
+/* change format and styling when scaled down for mobile application */
+@media only screen and (max-width: 600px){
+    .navbar {
+        background-color: var(--black);
+        color: var(--white);
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-container {
+        display: block;
+    }
+
+    .nav-items a{
+        color: var(--white);
+    }
 }
