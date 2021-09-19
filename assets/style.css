@@ -1,3 +1,4 @@
+/* global variables representiving colors that are complimentary*/
 :root {
       --oceangreen: #DEF2F1;
       --black: #17252A;
@@ -15,26 +16,21 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    padding: 20px;       
 }
 
 .navbar h1{
-    font-size: 25px;
-    padding-left: 10px;
+    font-size: 35px;
+    padding: 15px;
 }
 
 .nav-container {
-    display: flex; 
-    padding: 5px;  
+    display: flex;   
     list-style: none;
 }
 
-.nav-items {
-    padding-left: 10px;
-}
 .nav-items a {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 25px 15px;
     text-decoration: none;
     color: var(--black);
     text-align: center;
@@ -54,20 +50,22 @@ nav {
         color: var(--white);
         display: block;
         width: 100%;
-        text-align: center;
-        padding: 10px;
     }
 
     .navbar h1 {
         font-size: 35px;
         padding: 10px;
+        text-align: center;
     }
 
     .nav-container {
-        display: block;
+        display: block;    
     }
 
     .nav-items a{
+        width: 100%;
+        padding-left: 10px;
         color: var(--white);
+        text-align: center;
     }
 }
