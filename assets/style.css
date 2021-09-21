@@ -62,6 +62,7 @@ nav {
     align-items: right;
     gap: 50px;
     padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 /* styles and adds positioning for image */
@@ -74,11 +75,13 @@ nav {
     object-fit: contain;
 }
 
+
+/* changes the font size and styling for the heading aboutme tag */
 .aboutme_text h2 {
     color: var(--darkaqua);
     font-size: 3vw;
     padding: 20px;
-    font-weight: 75s0;
+    font-weight: 750;
     text-decoration: underline;
 }
 
@@ -92,8 +95,40 @@ nav {
     text-indent: 40px;
 }
 
-/* change format and styling when scaled down for mobile application */
+.work h2{
+    padding-top: 35px;
+    text-align: center;
+    color: var(--darkaqua);
+    font-size: 3vw;
+    font-weight: 750;
+    text-decoration: underline;
+}
+/* editing image gallery */
+.horiseon_image {
+    padding-top: 50px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    opacity: 65%;
+}
 
+.horiseon_image:hover {
+    opacity: 100%;
+}
+
+.gallery_image {
+    padding-top: 50px;
+    width: 40%;
+    display: inline;
+    height: auto;
+    margin-left: 10%;
+    opacity: 65%;
+}
+
+
+/* change format and styling when scaled down for mobile application */
 @media only screen and (max-width: 600px){
     .navbar {
         background-color: var(--black);
@@ -113,7 +148,8 @@ nav {
 
     .nav-items a{
         width: 100%;
-        padding-left: 0px;
+        /* padding-left: 0px; */
+        padding: 10px;
         display: block;
         font-size: 16px;
         font-weight: 600;
