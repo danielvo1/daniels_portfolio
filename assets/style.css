@@ -1,4 +1,4 @@
-/* global variables representiving colors that are complimentary*/
+ /* global variables representiving colors that are complimentary*/
 :root {
       --oceangreen: #DEF2F1;
       --black: #17252A;
@@ -139,28 +139,36 @@ nav {
     opacity: 100%;
 }
 
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
 .contacts h2 {
     font-size: 30px;
     text-decoration: underline;
     margin-right: 20px;
-    text-align: center;
+    padding-left: 10%;
+    text-align: left;
+    color: var(--darkaqua);
 }
 
-.contact_container {
-    text-align: center;
-    display: block;
+.contact_container{
+    padding: 40px;
+    display: flex;   
+    list-style: none;
 }
-
 .contact_container a {
     color: var(--black);
     text-decoration: none;
-    padding: 10px;
-    margin:auto;
+    font-size: 20px;
+    margin: 20px;
 }
 
 
 .contact_container a:hover{
-    color: var(--oceangreen);
+    color: var(--darkaqua);
 }
 
 
@@ -176,7 +184,6 @@ nav {
     }
 
     .navbar h1 {
-        padding: 10px;
         text-align: center;
     }
 
@@ -218,33 +225,20 @@ nav {
 
     .contacts {
         display: block;
+        text-align: center;
     }
 
     .contacts h2 {
+        color: var(--darkaqua);
+        font-weight: 750;
         font-size: 22px;
-        padding: 20px;
-        background-color: var(--white);
-    }
-    
-    .contact_container{
-        display: flex;
+        padding-left: 5%;
         text-align: center;
-        justify-content: center;
-        gap: 20px 80px;
-        font-size: 20px;
-        background-color: var(--white);
-    }
-    
-    .contact_container a{
-        text-decoration: none;
-        font-size: 18px;
-        color: var(--black);
-        background-color: var(--white);
-    }
-    
-    .contact_container a:hover{
-        color: var(--oceangreen);
     }
 
+    .contact_container{
+        padding-left: 20%;
+    }
 
+    
 }
